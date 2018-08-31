@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="xfermode"/>
+
+            <ImageView
+                android:id="@+id/iv_xfermode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_height"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="shader"/>
+
+            <ImageView
+                android:id="@+id/iv_shader"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_height"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="clipPath"/>
+
+            <io.github.drawdemo.RoundImageView
+                android:id="@+id/iv_clip_path"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pic_height"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
