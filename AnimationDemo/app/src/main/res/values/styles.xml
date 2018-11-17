@@ -1,0 +1,28 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorAccent</item>
+	</style>
+
+	<style name="AnimationAppTheme" parent="AppTheme">
+		<item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+	</style>
+
+	<style name="AnimationActivity" parent="@android:style/Animation.Activity">
+		<!--从 activity1 进入到 activity2-->
+		<!--activity2 的进入动画-->
+		<item name="android:activityOpenEnterAnimation">@anim/activity_slide_enter_right</item>
+		<!--activity1 的退出动画-->
+		<item name="android:activityOpenExitAnimation">@anim/activity_slide_exit_left</item>
+		<!--从 activity2 退出到 activity1-->
+		<!--activity1 的进入动画-->
+		<item name="android:activityCloseEnterAnimation">@anim/activity_slide_enter_left</item>
+		<!--activity2 的退出动画-->
+		<item name="android:activityCloseExitAnimation">@anim/activity_slide_exit_right</item>
+	</style>
+
+</resources>
